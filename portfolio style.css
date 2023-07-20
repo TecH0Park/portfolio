@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+*{
+  box-sizing:border-box;
+}
+body{
+  background-color:#e5e2fb;
+  color:#FFF;
+  font-family:'lato', sans-serif;
+  margin:0;
+}
+nav{
+  background-color:#828286;
+  color:#FFF;
+  padding:15px;
+  display:flex;
+  justify-content:flex-end;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+}
+nav a{
+    color:#FFF;
+  margin-left:30px;
+  text-decoration:none;
+}nav a:hover::after{
+  conent:'';
+  border-bottom:3px solid #fff;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+}
+nav a:hover{
+  border-bottom:3px solid #fdf;
+}
+header{
+  height:100vh;
+  background:url();
+  background-size:cover;
+  background-postion: center center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  
+}
+header h1{
+  font-size:60px;
+  margin-bottom:5px;
+  margin-top:0;
+  color:#0D0221;
+}
+header p{
+  font-size:30px;
+  margin:0;
+  color:#0D0221;
+  font-family:cursive;
+}
+
+  
+
+header * {
+  position:relative;
+  z-index:1;
+  
+}
+.pro{
+  background-color:#f1f7f1;
+}
+section{
+  text-align:center;
+  padding:40px;
+}
+section h2{
+  margin-bottom:0;
+  font-size:75px;
+  color:#3a1741;  /*PROJECT*/
+  font-family:cursive;
+}
+section p{
+  margin-top:0;
+  font-family:cursive;
+}
+.project-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  max-width:810px; 
+  margin:20px auto 0;
+}
+.project-tile{
+  max-width:250px;
+  margin:10px;
+}
+.project-tile img{
+  max-width:100%;
+  opacity:0.8;
+  border-radius:50%;
+}
+.project-tile p{
+  font-size:20px;
+  margin-top:10px;
+  color:#723197;    /* bouncing ball beaTing hearT and Twinkling sTar*/
+}
+.bottom h2{
+  color:#39023b; /* social media*/
+}
+
+.links{
+  display:flex;
+  list-style-type:none;
+  justify-content:center;
+  margin:0;
+  padding:0;
+}
+.links a{
+  border-radius:50%;
+  border:3px solid #78357a;
+  color:#fd4cbc;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  margin:0 10px;
+  height:50px;
+  width:50px;
+  text-decoration:none;
+}
+a:hover{
+  color:#011627;
+}
+
+footer
+{
+  background-color:#828286;
+  color:#FFF;
+  padding:10px;
+  text-align:center;
+}
+#abc {
+  width: 35px;
+  height: 35px;
+}
+#abc:hover {
+  width: 30px;
+  height: 30px;
+}
+
+#stars {
+  color: #330122 ;
+  animation: blink 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.4;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+footer .fa-tree{
+  color:#AAFCB8;
+}
